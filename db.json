@@ -1,0 +1,25 @@
+{
+  "tasks": [
+    {
+      "id": 1,
+      "title": "Take a shower",
+      "date": "06/04/23",
+      "reminder": true,
+      "importance": "high"
+    },
+    {
+      "id": 3,
+      "title": "Buy a chair",
+      "date": "24/06/22",
+      "reminder": true,
+      "importance": "medium"
+    },
+    {
+      "id": 4,
+      "title": "Eat",
+      "date": "07/04/22",
+      "reminder": false,
+      "importance": "low"
+    }
+  ]
+}

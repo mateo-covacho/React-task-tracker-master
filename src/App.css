@@ -1,0 +1,181 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+.App {
+  text-align: center;
+}
+
+.App-header {
+  background-color: #282c34;
+  display: flex;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.taskList {
+  width: 40vw;
+  float: right;
+  margin-right: 10vw;
+  max-width: 700px;
+}
+
+.task {
+  background-color: #4e8098;
+  width: 100%;
+  float: right;
+  margin: 1vh;
+  margin-bottom: 0px;
+  border-radius: 5px;
+  max-width: 375px;
+  position: relative;
+}
+
+.taskreminder {
+  background-color: #4e8098;
+  width: 100%;
+  float: right;
+  margin: 1vh;
+  margin-bottom: 0px;
+  border-radius: 5px;
+  max-width: 375px;
+  position: relative;
+  border-left: rgb(82, 255, 82);
+  border-width: 5px;
+  border-left-style: inset;
+}
+
+.taskTitle {
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.btn {
+  display: inline-block;
+  background: #000;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  margin: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 15px;
+  font-family: inherit;
+}
+
+.btn:focus {
+  outline: none;
+}
+
+.btn:active {
+  transform: scale(0.98);
+}
+
+.btn-block {
+  display: block;
+  width: 100%;
+}
+
+.taskDate {
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.tasksWrapper {
+  margin-bottom: 60vh;
+}
+
+.taskIcon {
+  font-size: 40px;
+  width: min-content;
+  position: absolute;
+  top: 0px;
+  left: 5%;
+}
+
+.closeButton {
+  font-size: 30px;
+  width: min-content;
+  position: absolute;
+  top: 5%;
+  right: 7%;
+}
+
+.taskReminderButtonOn {
+  font-size: 30px;
+  width: min-content;
+  position: absolute;
+  top: 50%;
+  right: 7%;
+  color: green;
+}
+
+.aboutMeSection {
+}
+
+.taskReminderButtonOff {
+  font-size: 30px;
+  width: min-content;
+  position: absolute;
+  top: 50%;
+  right: 7%;
+  color: red;
+}
+
+.form {
+  display: inline-block;
+  width: 40vw;
+  float: left;
+  margin-left: 10px;
+  font-size: 15px;
+  border: black;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 5px;
+  padding-bottom: 10px;
+}
+
+.form-control {
+  display: block;
+}
+
+.form-control label {
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.form-control input {
+  width: 90%;
+}
+
+.radio-button {
+  width: 50px;
+  display: inline-block;
+}
+
+.form-control-check {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.form-control-check label {
+}
+
+.form-control-check input {
+}
