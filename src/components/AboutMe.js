@@ -13,6 +13,12 @@ const AboutMe = () => {
         occaecat cupidatat non proident, sunt in culpa qui officia deserunt
         mollit anim id est laborum.
       </p>
+      <br />
+      <Link to="/login">Login</Link>
+      <br />
+      <Link to="/signup">Signup</Link>
+      <br />
+
       <Link to="/">Go Back</Link>
     </div>
   );

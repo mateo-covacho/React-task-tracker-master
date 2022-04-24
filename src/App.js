@@ -3,6 +3,8 @@ import TaskList from "./components/TaskList";
 import AddTaskForm from "./components/AddTaskForm";
 import AboutMe from "./components/AboutMe";
 import Footer from "./components/Footer";
+import Login from "./components/Login";
+import Signup from "./components/Signup";
 import { useState, useEffect } from "react";
 import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
 /*================================== ============================================*/
@@ -106,6 +108,8 @@ function App() {
             }
           />
           <Route path="/about" element={<AboutMe />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/signup" element={<Signup />} />
         </Routes>
         <br />
         <Footer />

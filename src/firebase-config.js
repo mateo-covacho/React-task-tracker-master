@@ -1,6 +1,7 @@
 import { initializeApp } from "firebase/app";
 import { getAnalytics } from "firebase/analytics";
 import { getFirestore } from "@firebase/firestore";
+import "firebase/auth";
 const firebaseConfig = {
   apiKey: "AIzaSyAS6LpIyzE0X7ORsrZ-9-ZLX6eRkx7uvHk",
   authDomain: "tasktrackerreact-e8f9a.firebaseapp.com",
