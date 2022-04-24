@@ -25,6 +25,7 @@ code {
 
 .taskList {
   width: 40vw;
+  min-width: 250px;
   float: right;
   margin-right: 10vw;
   max-width: 700px;
@@ -58,6 +59,7 @@ code {
 .taskTitle {
   font-size: 25px;
   font-weight: 600;
+  width: 70%;
 }
 
 .btn {
@@ -88,20 +90,22 @@ code {
 }
 
 .taskDate {
+  display: inline-block;
   font-size: 25px;
   font-weight: 600;
+  width: 70%;
+  margin-right: 0px;
 }
 
 .tasksWrapper {
-  margin-bottom: 60vh;
 }
 
 .taskIcon {
+  display: inline-block;
   font-size: 40px;
-  width: min-content;
-  position: absolute;
-  top: 0px;
-  left: 5%;
+  width: 40px;
+  height: 40px;
+  margin: 0;
 }
 
 .closeButton {
@@ -136,6 +140,7 @@ code {
 .form {
   display: inline-block;
   width: 40vw;
+  min-width: 300px;
   float: left;
   margin-left: 10px;
   font-size: 15px;
@@ -178,4 +183,13 @@ code {
 }
 
 .form-control-check input {
+}
+
+Footer {
+  height: 10vh;
+  width: 100vw;
+  margin-bottom: 10px;
+  position: fixed;
+  bottom: 0px;
+  align-items: center;
 }

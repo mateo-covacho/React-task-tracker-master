@@ -16,8 +16,6 @@ import {
   updateDoc,
   deleteDoc,
 } from "firebase/firestore";
-import { clear } from "@testing-library/user-event/dist/clear";
-import { async } from "@firebase/util";
 
 /*==============================================================================*/
 
@@ -94,7 +92,9 @@ function App() {
                   Add Task{" "}
                 </div>
                 <br />
-                {showAddTaskPanel && <AddTaskForm onAdd={handleAddTask} />}
+                <div className="addTaskForm">
+                  {showAddTaskPanel && <AddTaskForm onAdd={handleAddTask} />}
+                </div>
                 <div className="tasksWrapper">
                   <TaskList
                     taskList={tasks}

@@ -15,9 +15,11 @@ const Task = (props) => {
   }
   return (
     <div>
-      <p className="taskIcon">{priorityIcon}</p>
       <p className="taskTitle">{props.taskData.title}</p>
-      <p className="taskDate">{props.taskData.date}</p>
+      <div className="bottom">
+        <p className="taskIcon">{priorityIcon}</p>
+        <p className="taskDate">{props.taskData.date}</p>
+      </div>
 
       {props.taskData.reminder ? (
         <div
