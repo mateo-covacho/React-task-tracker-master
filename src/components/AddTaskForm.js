@@ -4,6 +4,7 @@ import React from "react";
 const AddTaskForm = (props) => {
   const [title, setTitle] = useState("");
   const [date, setDate] = useState("");
+  const [time, setTime] = useState("");
   const [reminder, setReminder] = useState(false);
   const [importance, setImportance] = useState("");
 
@@ -11,11 +12,11 @@ const AddTaskForm = (props) => {
     e.preventDefault();
 
     if (!title) {
-      alert("Please add a task");
+      alert("Please add a task name");
       return;
     }
-
-    props.onAdd({ title, date, reminder, importance });
+    setTime(Date.now());
+    props.onAdd({ title, date, reminder, importance, time });
 
     setTitle("");
     setDate("");

@@ -29,17 +29,20 @@ function App() {
   useEffect(() => {
     const getTasks = async () => {
       const data = await getDocs(tasksCollection);
-
       setTasks(data.docs.map((doc) => ({ ...doc.data(), id: doc.id })));
     };
 
     getTasks();
+
+    const interval = setInterval(() => {
+      getTasks();
+    }, 500);
+    return () => clearInterval(interval);
   }, []);
 
   function handleAddTask(task) {
     const id = Math.floor(Math.random() * 100000) + 1;
     const newTask = { id, ...task };
-
     const addTask = async () => {
       await addDoc(tasksCollection, newTask);
     };
@@ -97,6 +100,7 @@ function App() {
                 <div className="addTaskForm">
                   {showAddTaskPanel && <AddTaskForm onAdd={handleAddTask} />}
                 </div>
+
                 <div className="tasksWrapper">
                   <TaskList
                     taskList={tasks}
